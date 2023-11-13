@@ -14,17 +14,38 @@ public class Hero {
     private int attack;
     private boolean dead;
 
+    /*＊
+    ＊ヒーローの名前をゲッターを使うことで取得する。 
+    ＊＠return name ヒーローの名前
+    */
+
     public String getName(){
         return this.name;
     }
+
+    /**
+     * ヒーローの名前をセッターを使うことで設定する。
+     * @param name ヒーローの新しい名前。
+     */
 
     public void setName(String name) {
         this.name = name;
     }
 
+   /**
+     * ヒーローの現在のヘルスポイント（HP）をゲッターを使うことで取得する。
+     * @return ヒーローの現在のヘルスポイント。
+     */
+
     public int getHitPoint(){
         return this.hitPoint;
     }
+
+    /**
+     * ヒーローのヘルスポイント（HP）をセッターを使うことで設定する。
+     * @param hitPoint ヒーローの新しいヘルスポイント。
+     */
+
     public void setHitPoint(int hitPoint){
         this.hitPoint=hitPoint;
     }
@@ -66,9 +87,21 @@ public class Hero {
             System.out.printf("勇者%sは道半ばで力尽きてしまった。\n", name);
         }
     }
+
+    /**
+     * ヒーローの生死状態をゲッターを使うことで取得する。
+     * @return ヒーローが死亡している場合はtrue、そうでない場合はfalse。
+     */
+
     public boolean getDead(){
         return this.dead;
     }
+
+    /**
+     * ヒーローの生死状態をセッターを使うことで設定する。
+     * @param dead ヒーローが死亡している場合はtrue、そうでない場合はfalse。
+     */
+
     public void setDead(boolean dead){
         this.dead=dead;
     }

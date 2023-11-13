@@ -53,15 +53,39 @@ public class Enemy {
             System.out.printf("モンスター%sは倒れた。\n", name);
         }
     }
+
+    /**
+     * 敵の生死状態をゲッターを使うことで取得する。
+     * @return trueの場合、敵は死亡している。falseの場合は生存している。
+     */
+
     public boolean getDead(){
         return this.dead;
     }
+
+    /**
+     * 敵の生死状態をセッターを使うことで設定する。
+     * @param dead trueの場合、敵は死亡している。falseの場合は生存している。
+     */
+
     public void setDead(boolean dead){
         this.dead=dead;
     }
+
+    /**
+     * 敵の名前をゲッターを使うことで取得する。
+     * @return 敵の名前。
+     */
     public String getName(){
         return name;
     }
+
+    /**
+     * 敵の名前をセッターを使うことで設定する。
+     * @param name 新しい敵の名前。
+     */
+
+
     public void setName(String name){
         this.name=name;
     }
