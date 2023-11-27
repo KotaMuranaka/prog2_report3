@@ -37,6 +37,13 @@ public class LivingThing {
     public void setHitPoint(int hitPoint){
         this.hitPoint=hitPoint;
     }
+    public int getAttack(){
+        return this.attack;
+    }
+
+    public void setAttack(int attack){
+        this.attack=attack;
+    }
 
     public void attack(LivingThing opponent){
         if ( this.dead == false ){
